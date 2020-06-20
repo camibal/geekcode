@@ -1,0 +1,1295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*font size*/
+
+.fz-40 {
+    font-size: 40px;
+}
+
+.fz-32 {
+    font-size: 32px;
+}
+
+.fz-18 {
+    font-size: 18px;
+}
+
+.fz-28 {
+    font-size: 28px;
+}
+
+.fz-14 {
+    font-size: 14px;
+}
+
+.fz-15 {
+    font-size: 10px;
+}
+
+/*font size*/
+
+/*inicio menu*/
+
+input#abrir-cerrar {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+.cerrar {
+    display: none;
+}
+
+#sidebar {
+    width: 0;
+}
+
+#contenido {
+    margin-left: 0;
+}
+
+input#abrir-cerrar:checked+label[for="abrir-cerrar"] .cerrar {
+    display: inline;
+}
+
+input#abrir-cerrar:checked+label[for="abrir-cerrar"] .abrir {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.sidebar ul, .sidebar li {
+    padding: 0;
+    list-style: none inside;
+}
+
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 100%;
+    min-width: 200px;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 100%;
+    color: #000;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+#contenido {
+    transition: margin-left .4s;
+    padding: 1rem;
+}
+
+.abrir-cerrar {
+    color: #2E88C7;
+    font-size: 1rem;
+}
+
+input#abrir-cerrar {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+input#abrir-cerrar:checked+label[for="abrir-cerrar"], input#abrir-cerrar:checked~#contenido {
+    z-index: 200;
+    transition: margin-left .4s;
+}
+
+input#abrir-cerrar:checked+label[for="abrir-cerrar"] .cerrar {
+    display: inline;
+}
+
+input#abrir-cerrar:checked+label[for="abrir-cerrar"] .abrir {
+    display: none;
+}
+
+.bg_link_menu {
+    color: #000 !important;
+}
+
+.bg_link_menu:hover {
+    color: #000 !important;
+}
+
+.bg_link_menu_none {
+    color: #000 !important;
+}
+
+.bg_link_menu_none:hover {
+    background-color: #e7e8e8 !important;
+    color: #000 !important;
+}
+
+/*fin menu*/
+
+@media(min-width: 320px) {
+    .margin_left_menu {
+        margin-left: 0px;
+    }
+    input#abrir-cerrar:checked~#sidebar {
+        width: 80%;
+    }
+    .ubicacion_btn_menu {
+        position: absolute;
+        top: -42px;
+        left: -4px;
+    }
+    .img_menu_icono {
+        width: 10%;
+        background-color: transparent;
+        position: fixed;
+        margin-top: 56px;
+        margin-left: 21px
+    }
+    .texto_favoritos_clientes {
+        font-family: 'Oswald', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        ;
+    }
+    .texto_productos_temporada {
+        padding: 42px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .img_productos_temporada {
+        width: 40%;
+    }
+    .img_whatsapp {
+        width: 10%;
+        display: scroll;
+        position: fixed;
+        bottom: 393px;
+        left: 15px;
+        z-index: 1000;
+    }
+    .hs-overlay span {
+        display: block;
+        padding: 20px;
+        position: absolute;
+        width: 293px;
+        left: -36px;
+        top: 109px;
+        color: #fff;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 23px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        text-align: center;
+        pointer-events: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .hs-wrapper {
+        width: 220px;
+        height: 300px;
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .texto_footer {
+        position: absolute;
+        top: -31px;
+        font-family: 'Oswald', sans-serif;
+    }
+    .texto_modal_img_1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+    }
+    .container6 {
+        width: 100%;
+        padding: 35px;
+    }
+    .btn_close {
+        position: relative;
+        left: 10px;
+        bottom: -22px;
+        background-color: #000;
+        color: #fff
+    }
+    .icono_cerrar {
+        position: relative;
+        left: 133px;
+        font-size: 40px;
+    }
+    .pocicion_btn_1_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 54px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_2_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 446px;
+        left: 54px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_3_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 843px;
+        left: 54px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_4_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 1240px;
+        left: 54px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_5_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 1637px;
+        left: 54px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_6_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 2034px;
+        left: 54px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_7_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 2431px;
+        left: 54px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_8_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 2828px;
+        left: 54px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .usuario_logueado {
+        position: absolute;
+        z-index: 1000;
+        top: 33px;
+        right: -42px;
+    }
+    .estilo_usuario_logueado {
+        font-size: 10px;
+    }
+    .container10 {
+        width: 100%;
+        margin-left: 0;
+    }
+    .container11 {
+        width: 100%;
+        margin-left: 0;
+    }
+    .ml_h1 {
+        margin-right: 0;
+    }
+    .estilo_span_footer {
+        font-family: 'Oswald', sans-serif;
+        margin-top: 20px;
+    }
+}
+
+@media(min-width: 576px) {
+    .ubicacion_btn_menu {
+        position: absolute;
+        top: -59px;
+        width: 68%;
+        left: -24px;
+    }
+    input#abrir-cerrar:checked~#sidebar {
+        width: 40%;
+    }
+    .img_menu_icono {
+        width: 7%;
+        background-color: transparent;
+        position: fixed;
+        margin-top: 70px;
+        margin-left: 35px;
+    }
+    .img_whatsapp {
+        width: 8%;
+        display: scroll;
+        position: fixed;
+        bottom: 510px;
+        left: 15px;
+        z-index: 1000;
+    }
+    .pocicion_btn_1_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 163px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_2_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 446px;
+        left: 163px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_3_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 843px;
+        left: 163px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_4_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 1240px;
+        left: 163px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_5_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 1637px;
+        left: 163px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_6_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 2034px;
+        left: 163px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_7_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 2431px;
+        left: 163px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_8_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 2828px;
+        left: 163px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .icono_cerrar {
+        position: relative;
+        left: 231px;
+        font-size: 40px;
+    }
+}
+
+@media(min-width: 768px) {
+    .ubicacion_btn_menu {
+        position: absolute;
+        top: -62px;
+        width: 50%;
+        left: -24px;
+    }
+    .img_menu_icono {
+        width: 6%;
+        background-color: transparent;
+        position: fixed;
+        margin-top: 70px;
+        margin-left: 35px;
+    }
+    .hs-overlay span {
+        display: block;
+        padding: 20px;
+        position: absolute;
+        width: 293px;
+        left: -64px;
+        top: 87px;
+        color: #fff;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        text-align: center;
+        pointer-events: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .hs-wrapper {
+        width: 220px;
+        height: 250px;
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .texto_productos_temporada {
+        padding: 0px 42px 42px 42px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .img_productos_temporada {
+        width: 88%;
+    }
+    .img_whatsapp {
+        width: 7%;
+        display: scroll;
+        position: fixed;
+        bottom: 510px;
+        left: 15px;
+        z-index: 1000;
+    }
+    .pocicion_btn_1_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 75px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_2_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 434px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_3_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 447px;
+        left: 77px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_4_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 447px;
+        left: 435px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_5_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 843px;
+        left: 74px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_6_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 843px;
+        left: 432px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_7_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 1239px;
+        left: 74px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_8_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 1239px;
+        left: 433px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .icono_cerrar {
+        position: relative;
+        left: 231px;
+        font-size: 40px;
+    }
+    .container6 {
+        width: 100%;
+        padding: 35px;
+    }
+}
+
+@media(min-width: 992px) {
+    .ubicacion_btn_menu {
+        position: absolute;
+        top: -61px;
+        width: 37%;
+        left: -8px;
+    }
+    .img_menu_icono {
+        width: 5%;
+        background-color: transparent;
+        position: fixed;
+        margin-top: 67px;
+        margin-left: 19px;
+    }
+    .img_productos_temporada {
+        width: 80%;
+        margin-top: 20px;
+    }
+    .hs-overlay span {
+        display: block;
+        padding: 20px;
+        position: absolute;
+        width: 293px;
+        left: -37px;
+        top: 87px;
+        color: #fff;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 22px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        text-align: center;
+        pointer-events: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .texto_productos_temporada {
+        padding: 42px 42px 42px 42px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 19px;
+        text-align: justify;
+    }
+    .img_whatsapp {
+        width: 6%;
+        display: scroll;
+        position: fixed;
+        bottom: 510px;
+        left: 15px;
+        z-index: 1000;
+    }
+    .carro {
+        border: 1px solid #333;
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 16px;
+        height: 386px;
+    }
+    .pocicion_btn_1_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 51px;
+        left: 14px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_2_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 51px;
+        left: 254px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_3_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 51px;
+        left: 494px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_4_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 51px;
+        left: 734px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_5_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 461px;
+        left: 14px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_6_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 461px;
+        left: 254px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_7_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 461px;
+        left: 494px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_8_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 461px;
+        left: 734px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .icono_cerrar {
+        position: relative;
+        left: 378px;
+        font-size: 40px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .ubicacion_btn_menu {
+        position: absolute;
+        top: -256px;
+        left: -30px;
+    }
+    .img_menu_icono {
+        width: 4%;
+        background-color: transparent;
+        position: fixed;
+        margin-top: 263px;
+        margin-left: 49px;
+    }
+    .pocicion_btn_1_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 51px;
+        left: 35px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_2_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 51px;
+        left: 322px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_3_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 51px;
+        left: 607px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_4_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 51px;
+        left: 893px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_5_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 461px;
+        left: 38px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_6_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 461px;
+        left: 322px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_7_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 461px;
+        left: 607px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_8_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 461px;
+        left: 893px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .icono_cerrar {
+        position: relative;
+        left: 548px;
+        font-size: 40px;
+    }
+    .container6 {
+        width: 100%;
+        padding: 56px;
+    }
+}
+
+@media(min-width: 1280px) {
+    .img_menu_icono {
+        width: 4%;
+        background-color: transparent;
+        position: fixed;
+        margin-top: 262px;
+        margin-left: 40px;
+    }
+    .hs-wrapper {
+        width: 1100px;
+        height: 370px;
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .hs-overlay span {
+        display: block;
+        padding: 20px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 140px;
+        color: #fff;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 34px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        text-align: center;
+        pointer-events: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .img_productos_temporada {
+        width: 66%;
+        margin-top: 0;
+    }
+    .img_whatsapp {
+        width: 3%;
+        display: scroll;
+        position: fixed;
+        bottom: 141px;
+        left: 15px;
+        z-index: 1000;
+    }
+    .usuario_logueado {
+        position: absolute;
+        z-index: 1000;
+        top: 32px;
+        right: 190px;
+    }
+    .container10 {
+        width: 100%;
+        margin-left: 100px;
+    }
+    .container11 {
+        width: 95%;
+        margin-left: 0;
+    }
+    .ml_h1 {
+        margin-right: 95px;
+    }
+    .estilo_span_footer {
+        font-family: 'Oswald', sans-serif;
+        margin-top: 0;
+    }
+    .pocicion_btn_1_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 51px;
+        left: 35px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_2_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 51px;
+        left: 322px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_3_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 51px;
+        left: 607px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_4_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 51px;
+        left: 893px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_5_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 461px;
+        left: 38px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_6_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 461px;
+        left: 322px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_7_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 461px;
+        left: 607px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_8_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 461px;
+        left: 893px;
+        font-size: 12px;
+        width: 212px;
+        height: 227px;
+    }
+    .pocicion_btn_1_modal_login {
+        position: absolute;
+        top: 525px;
+        left: 151px;
+        width: 208px;
+        height: 295px;
+    }
+    .pocicion_btn_2_modal_login {
+        position: absolute;
+        top: 525px;
+        left: 431px;
+        width: 208px;
+        height: 295px;
+    }
+    .pocicion_btn_3_modal_login {
+        position: absolute;
+        top: 525px;
+        left: 714px;
+        width: 208px;
+        height: 295px;
+    }
+    .pocicion_btn_4_modal_login {
+        position: absolute;
+        top: 525px;
+        left: 991px;
+        width: 208px;
+        height: 295px;
+    }
+    .pocicion_btn_5_modal_login {
+        position: absolute;
+        top: 1073px;
+        left: 151px;
+        width: 208px;
+        height: 295px;
+    }
+    .pocicion_btn_6_modal_login {
+        position: absolute;
+        top: 1073px;
+        left: 431px;
+        width: 208px;
+        height: 295px;
+    }
+    .pocicion_btn_7_modal_login {
+        position: absolute;
+        top: 1073px;
+        left: 714px;
+        width: 208px;
+        height: 295px;
+    }
+    .pocicion_btn_8_modal_login {
+        position: absolute;
+        top: 1073px;
+        left: 991px;
+        width: 208px;
+        height: 295px;
+    }
+}
+
+@media(min-width: 1366px) {
+    .pocicion_btn_1_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 54px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+    .pocicion_btn_2_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 340px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+    .pocicion_btn_3_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 625px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+    .pocicion_btn_4_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 909px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+    .pocicion_btn_5_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 488px;
+        left: 54px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+    .pocicion_btn_6_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 488px;
+        left: 340px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+    .pocicion_btn_7_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 488px;
+        left: 625px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+    .pocicion_btn_8_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 488px;
+        left: 909px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+}
+
+@media(min-width: 1920px) {
+    .ubicacion_btn_menu {
+        position: absolute;
+        top: -331px;
+        left: -30px;
+    }
+    .img_slider {
+        height: 1000px;
+    }
+    .img_menu_icono {
+        width: 3%;
+        background-color: transparent;
+        position: fixed;
+        margin-top: 333px;
+        margin-left: 35px;
+    }
+    .texto_favoritos_clientes {
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+    }
+    .texto_productos_temporada {
+        padding: 42px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+    }
+    .img_productos_temporada {
+        width: 80%;
+    }
+    .img_whatsapp {
+        width: 4%;
+        display: scroll;
+        position: fixed;
+        bottom: 163px;
+        left: 15px;
+        z-index: 1000;
+    }
+    .hs-overlay span {
+        display: block;
+        padding: 20px;
+        position: absolute;
+        width: 293px;
+        left: 20px;
+        top: 200px;
+        color: #fff;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 38px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        text-align: center;
+        pointer-events: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .hs-wrapper {
+        width: 333px;
+        height: 500px;
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .texto_footer {
+        position: absolute;
+        top: -13px;
+        font-family: 'Oswald', sans-serif;
+    }
+    .texto_modal_img_1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+    }
+    .container6 {
+        width: 85%;
+        padding: 0;
+    }
+    .primer_imagen {
+        width: 80%;
+        height: 470px;
+    }
+    .segunda_imagen {
+        width: 80%;
+        height: 470px;
+    }
+    .btn_close {
+        position: relative;
+        right: -119px;
+        bottom: 28px;
+        background-color: #000;
+        color: #fff
+    }
+    .icono_cerrar {
+        position: relative;
+        left: 544px;
+        font-size: 40px;
+    }
+    .pocicion_btn_1_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 54px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+    .pocicion_btn_2_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 340px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+    .pocicion_btn_3_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 625px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+    .pocicion_btn_4_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 909px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+    .pocicion_btn_5_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 340px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+    .pocicion_btn_6_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 340px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+    .pocicion_btn_7_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 340px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+    .pocicion_btn_8_modal {
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        left: 340px;
+        font-size: 12px;
+        width: 178px;
+        height: 227px;
+    }
+}
